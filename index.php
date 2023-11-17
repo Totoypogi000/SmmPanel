@@ -75,7 +75,7 @@ $routes       = array_filter( explode('/',$first_route[0]) );
   }
 
 
-  if( route(0) != "admin" && $settings["site_maintenance"] == 1 ): include 'app/views/maintenance.php';exit(); endif;
+  if( route(0) != "admin" && $settings["https://yototplayz.com"] == 1 ): include 'app/views/maintenance.php';exit(); endif;
   if( $settings["service_list"] == 2 ): $serviceList = 1; endif;
 
   require controller($route[0]);
